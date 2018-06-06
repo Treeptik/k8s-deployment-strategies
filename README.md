@@ -94,7 +94,7 @@ Access: Proxy
 Create a dashboard with a Graph. Use the following query:
 
 ```
-sum(rate(http_requests_total{app="my-app"}[5m])) by (version)
+sum(rate(http_requests_total{app="my-app"}[10s])) by (version)
 ```
 
 To have a better overview of the version, add `{{version}}` in the legend field.
